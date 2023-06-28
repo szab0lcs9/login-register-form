@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="background">
+    <div class="formSelector">
+        <button onclick="showLoginForm()">Login</button>
+        <button onclick="showRegisterForm()">Register</button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button id="btnLogin" type="button" class="toggle-btn" onclick="login()">Login</button>
+          <button id="btnRegister" type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+          <form id="login" action="" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span class="f-normal">Remember me!</span>
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <form id="register" action="" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="email" class="input-field" placeholder="E-mail" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>I accept the conditions!</span>
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      <script src="./js/script.js"></script>    
+</body>
+</html>
