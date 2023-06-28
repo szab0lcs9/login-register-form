@@ -48,8 +48,10 @@ function showModal(){
 
 function showLoginForm(){
     showModal();
+    login();
 }
 
 function showRegisterForm(){
     showModal();
+    register();
 }
